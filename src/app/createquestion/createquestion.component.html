@@ -1,0 +1,142 @@
+
+ <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="" style="text-align: center;margin:20px; ">
+<button class="btn btn-primary " name="submit" type="submit">
+        List All Question
+</button>&nbsp;&nbsp;&nbsp;<button class="btn btn-default " name="submit" type="submit">
+        Add Question
+</button>&nbsp;&nbsp;&nbsp;<button class="btn btn-primary " name="submit" type="submit">
+        Search Question
+       </button>
+
+</div>       
+<div class="question">
+	<p style="text-align:center; font-weight:800;margin:20px"> Add The Quiz Question</p>
+<div class="bootstrap-iso" >
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-offset-3 col-md-6 col-sm-6 col-xs-6" style="border: 1px solid #337ab7;padding: 10px;box-shadow: 5px 10px 18px #337ab7;margin-bottom:20px">
+    <form method="post">
+     <div class="form-group ">
+      <label class="control-label requiredField" for="text4">
+       TOPIC
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="text4" name="text4" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="select">
+       Select a Choice
+      </label>
+      <select class="select form-control" id="select" name="select">
+       <option value="First Choice">
+        First Choice
+       </option>
+       <option value="Second Choice">
+        Second Choice
+       </option>
+       <option value="Third Choice">
+        Third Choice
+       </option>
+      </select>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="textarea">
+       ENTER THE QUESTION
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="10"></textarea>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="text">
+       OPTION 1
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="text" name="text" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="text1">
+       OPTION 2
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="text1" name="text1" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="text2">
+       OPTION 3
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="text2" name="text2" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="text3">
+       OPTION 4
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="text3" name="text3" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField">
+       RIGHT ANSWER
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="radio" type="radio" value="Answer 1"/>
+         Answer 1
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="radio" type="radio" value="Answer 2"/>
+         Answer 2
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="radio" type="radio" value="Answer 3"/>
+         Answer 3
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="radio" type="radio" value="Answer 4"/>
+         Answer 4
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
