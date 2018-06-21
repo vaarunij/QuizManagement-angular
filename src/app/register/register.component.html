@@ -34,23 +34,23 @@
 </head>
 <body>
 <div class="login-form">
-    <form action="/examples/actions/confirmation.php" method="post">
+    <form (submit)="register()">
         <h2 class="text-center">Register</h2>       
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Username" required="required">
+            <input type="text" formControlName="username" [(ngModel)] = "user.name" class="form-control"  placeholder="Username" required="required">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Email" required="required">
+            <input type="email" formControlName="email" [(ngModel)] = "user.email" class="form-control" placeholder="Email" required="required">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" placeholder="Password" required="required">
+            <input type="password" formControlName="password" [(ngModel)] = "user.password"  class="form-control" placeholder="Password" required="required">
         </div>
+        <input type="hidden" formControlName="role"  class="form-control" [(ngModel)]="user" placeholder="role">
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </div>
         <div class="clearfix">
-            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
-            
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>    
         </div>        
     </form>
     <p class="text-center"><a href="#">Login</a></p>
