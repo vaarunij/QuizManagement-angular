@@ -1,36 +1,26 @@
-<div class="login-form">
+<div class="quiz-form">
 	<div id="page-wrap">
-
-		<h1>Final Quiz for Lip building</h1>
-		
-		<form action="grade.php" method="post" id="quiz">
-		
-            <ol>
-            
-                <li>
-                
-                    <h3>CSS Stands for...</h3>
-                    
+		<h1>Final Quiz</h1>
+		<form action="grade.php" method="post" id="quiz">	
+            <ol>            
+                <li>                
+                    <h3>CSS Stands for...</h3>                    
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
                         <span for="question-1-answers-A">A) Computer Styled Sections </span>
-                    </div>
-                    
+                    </div>                    
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
                         <span for="question-1-answers-B">B) Cascading Style Sheets</span>
-                    </div>
-                    
+                    </div>                    
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
                         <span for="question-1-answers-C">C) Crazy Solid Shapes</span>
-                    </div>
-                    
+                    </div>                    
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
                         <span for="question-1-answers-D">D) None of the above</span>
-                    </div>
-                
+                    </div>                
                 </li>
                 
                 <li>
@@ -145,49 +135,67 @@
 	
 	</div>
 </div>
+
 	<style>
-	.login-form {
-		width: 840px;
-    	margin: 50px auto;
-	}
-    .login-form form {
-    	margin-bottom: 15px;
-        background: #f7f7f7;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
+	.quiz-form {
+     width: 840px;
+     margin: 50px auto;
+}
+ .quiz-form form {
+     margin-bottom: 15px;
+     background: white;
+     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+     padding: 30px;
+}
+ #page-wrap {
+     width: 700px;
+}
+ h1 {
+     margin: 25px 0;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     font: 600 1.5em/1 'Raleway', sans-serif;
+     color: rgba(0,0,0,.5);
+     width: 100%
+     text-align: center;   
+}
+ #quiz input {
+     vertical-align: middle;
+}
+ #quiz ol {
+     margin: 0px 10px 2px 0px;
+}
+ #quiz ol li {
+        background: #ebebeb;
+    padding: 10px;
+    border-radius: 5px;
+     margin: 0 0 20px 0;
+}
+ #quiz ol li div {
+     padding: 4px 0;
+}
+ input[type=checkbox], input[type=radio] {
+     margin: 0px 10px 2px 0px;
+}
 
-
-#page-wrap		    { width: 700px; }
-
-h1                  { margin: 25px 0; font: 14px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
-
-#quiz input {
+input[type=submit] {
+    border-radius: 10px;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    height: 55px;
+    padding: 0 20px;        
     vertical-align: middle;
+
+}
+ #quiz h3 {
+     font-size: 17px;
+     margin: 0 0 1px 0;
+     color: #666;
+}
+}
+ #results {
+     font: 600 1.5em/1 'Raleway', sans-serif;
 }
 
-#quiz ol {
-   margin: 0px 10px 2px 0px;
-}
-
-#quiz ol li {
-   margin: 0 0 20px 0;
-}
-
-#quiz ol li div {
-   padding: 4px 0;
-}
-
-input[type=checkbox], input[type=radio]
-{
-	margin: 0px 10px 2px 0px;
-}
-
-#quiz h3 {
-   font-size: 17px; margin: 0 0 1px 0; color: #666;
-}
-
-#results {
-    font: 44px Georgia, Serif;
-}
 </style>

@@ -7,21 +7,23 @@
 
 <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
 <div class="" style="text-align: center;margin:20px; ">
-<button class="btn btn-primary " name="submit" type="submit">
+<button class="btn btn-success " name="submit" type="submit">
         List All Question
-</button>&nbsp;&nbsp;&nbsp;<button class="btn btn-default " name="submit" type="submit">
+</button>&nbsp;&nbsp;&nbsp;
+<button class="btn btn-default " name="submit" type="submit">
         Add Question
-</button>&nbsp;&nbsp;&nbsp;<button class="btn btn-primary " name="submit" type="submit">
+</button>&nbsp;&nbsp;&nbsp;
+<button class="btn btn-success " name="submit" type="submit">
         Search Question
        </button>
-
 </div>       
+
 <div class="question">
-	<p style="text-align:center; font-weight:800;margin:20px"> Add The Quiz Question</p>
+<p class= "formhead"> Add Questions to the Quiz</p>
 <div class="bootstrap-iso" >
  <div class="container-fluid">
   <div class="row">
-   <div class="col-md-offset-3 col-md-6 col-sm-6 col-xs-6" style="border: 1px solid #337ab7;padding: 10px;box-shadow: 5px 10px 18px #337ab7;margin-bottom:20px">
+   <div class="col-md-offset-3 col-md-6 col-sm-6 col-xs-6 addform">
     <form method="post">
      <div class="form-group ">
       <label class="control-label requiredField" for="text4">
@@ -38,13 +40,13 @@
       </label>
       <select class="select form-control" id="select" name="select">
        <option value="First Choice">
-        First Choice
+        MCQ
        </option>
        <option value="Second Choice">
-        Second Choice
+        Open Question
        </option>
        <option value="Third Choice">
-        Third Choice
+        Associative 
        </option>
       </select>
      </div>
@@ -55,7 +57,7 @@
         *
        </span>
       </label>
-      <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="10"></textarea>
+      <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="5"></textarea>
      </div>
      <div class="form-group ">
       <label class="control-label requiredField" for="text">
@@ -119,6 +121,7 @@
          Answer 3
         </label>
        </div>
+
        <div class="radio">
         <label class="radio">
          <input name="radio" type="radio" value="Answer 4"/>
@@ -129,7 +132,7 @@
      </div>
      <div class="form-group">
       <div>
-       <button class="btn btn-primary " name="submit" type="submit">
+       <button class="btn btn-success " name="submit" type="submit">
         Submit
        </button>
       </div>
@@ -140,3 +143,30 @@
  </div>
 </div>
 </div>
+
+
+<style>
+
+.addform{
+  border: 1px solid #33b749;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px #33b749;
+  margin-bottom:20px;
+  border-radius: 10px;
+
+}
+
+.formhead{
+  text-align:center;
+   font-weight:800;
+   margin:20px;
+  font: 600 1.5em/1 'Raleway', sans-serif; 
+  color: rgba(0,0,0,.5);
+}
+
+option{
+    border-width: 1px;
+    border-style: solid;
+}
+
+</style>

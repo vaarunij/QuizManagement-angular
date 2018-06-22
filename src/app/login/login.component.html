@@ -9,9 +9,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <style type="text/css">
+
+    .fullpage {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #ebebeb;
+    }
+
 	.login-form {
-		width: 340px;
-    	margin: 50px auto;
+		width: 560px;
+    	margin: 60px auto;
+        background: #fff;
+        position: relative;
+        border-radius: 10px
 	}
     .login-form form {
     	margin-bottom: 15px;
@@ -21,37 +40,71 @@
     }
     .login-form h2 {
         margin: 0 0 15px;
+        font: 600 1.5em/1 'Raleway', sans-serif;
+        color: rgba(0,0,0,.5);
+        text-transform: uppercase;
+        width: 100%
     }
     .form-control, .btn {
         min-height: 38px;
-        border-radius: 2px;
+        border-radius: 10px;
     }
     .btn {        
         font-size: 15px;
         font-weight: bold;
     }
+    .btn-login{
+
+        border-radius: 10px;
+        background: #3333333;
+        height: 55px;
+        padding: 0 20px;
+        color: #fff;
+
+    }
+    .txt{
+    font-family: Raleway-SemiBold;
+    font-size: 15px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding-bottom: 11px; 
+    }
+a {
+    color: green;
+}
+
+p {
+    margin-top: 10px;
+}
+
 </style>
 </head>
 <body>
+    <div class="fullpage">
 <div class="login-form">
     <form (submit)="login()">
-        <h2 class="text-center">USER LOGIN</h2>       
+        <h2 class="text-center">USER LOGIN</h2> 
+        <span class="txt"> Username </span>      
         <div class="form-group">
-            <input type="text" formControlName="username" [(ngModel)] = "user.name" class="form-control"  placeholder="Username" required="required">
+            <input type="text" formControlName="username" [(ngModel)] = "user.name" class="form-control" required="required">
         </div>
+        <span class="txt"> Password </span>
         <div class="form-group">
-            <input type="password" formControlName="password"  class="form-control" [(ngModel)]="user.password" placeholder="Password" required="required">
+            <input type="password" formControlName="password"  class="form-control" [(ngModel)]="user.password" required="required">
         </div>
         <input type="hidden" formControlName="role"  class="form-control" [(ngModel)]="user" placeholder="role">
         <div class="form-group">
-            <button type="submit" value="Login"  class="btn btn-primary btn-block">Log in</button>
+            <button type="submit" value="Login"  class="btn btn-success btn-block btn-login">Login</button>
         </div>
         <div class="clearfix">
             <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
             <a href="#" class="pull-right">Forgot Password?</a>
         </div>        
     </form>
-    <p class="text-center"><a routerLink="/register">Create an Account</a></p>
+<div> 
+    <p class="text-center"><a routerLink="/register">New User? Create an Account </a> </p>
+</div>
+</div>
 </div>
 </body>
 </html>                                		                            
